@@ -4,7 +4,7 @@ export const productsAcc = [
     {
         id: "Guadeloupe",
         title: "Buddha Bracelet",
-        img: { accessoriesOne },
+        img: accessoriesOne,
         type: "accessories",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -15,7 +15,7 @@ export const productsAcc = [
     {
         id: "Finland",
         title: "Bright Gold Purse With Chain",
-        img: { accessoriesTwo },
+        img: accessoriesTwo,
         type: "accessories, girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -26,7 +26,7 @@ export const productsAcc = [
     {
         id: "Uzbekistan",
         title: "Black Over-the-shoulder Handbag",
-        img: { accessoriesThree },
+        img: accessoriesThree,
         type: "accessories, girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -37,7 +37,7 @@ export const productsAcc = [
     {
         id: "Isle of Man",
         title: "Anchor Bracelet",
-        img: { accessoriesFour },
+        img: accessoriesFour,
         type: "accessories",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -48,7 +48,7 @@ export const productsAcc = [
     {
         id: "Micronesia",
         title: "Light Brown Purse",
-        img: { accessoriesFive },
+        img: accessoriesFive,
         type: "accessories, girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -59,7 +59,7 @@ export const productsAcc = [
     {
         id: "Guatemala",
         title: "Bright Red Bag",
-        img: { accessoriesSix },
+        img: accessoriesSix,
         type: "accessories, girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -70,7 +70,7 @@ export const productsAcc = [
     {
         id: "Denmark",
         title: "Boho Bangle Bracelet",
-        img: { accessoriesSeven },
+        img: accessoriesSeven,
         type: "accessories",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -84,7 +84,7 @@ export const productsBoy = [
     {
         id: "Morocco",
         title: "Black Hoodie",
-        img: { boyOne },
+        img: boyOne,
         type: "boy",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -95,7 +95,7 @@ export const productsBoy = [
     {
         id: "Nigeria",
         title: "DNK Yellow Shoes",
-        img: { boyTwo },
+        img: boyTwo,
         type: "boy",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -106,7 +106,7 @@ export const productsBoy = [
     {
         id: "Mexico",
         title: "Blue Hoodie",
-        img: { boyThree },
+        img: boyThree,
         type: "boy",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -117,7 +117,7 @@ export const productsBoy = [
     {
         id: "Ascension Island",
         title: "Dark Blue Denim Jeans",
-        img: { boyFour },
+        img: boyFour,
         type: "boy",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -128,7 +128,7 @@ export const productsBoy = [
     {
         id: "St. Vincent & Grenadines",
         title: "Dark Brown Jeans",
-        img: { boyFive },
+        img: boyFive,
         type: "boy",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -142,7 +142,7 @@ export const productsGirl = [
     {
         id: "Brazil",
         title: "Blue Denim Shorts",
-        img: { girlOne },
+        img: girlOne,
         type: "girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -153,7 +153,7 @@ export const productsGirl = [
     {
         id: "Martinique",
         title: "Blue Denim Jeans",
-        img: { girlTwo },
+        img: girlTwo,
         type: "girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -164,7 +164,7 @@ export const productsGirl = [
     {
         id: "Uruguay",
         title: "Basic Gray Jeans",
-        img: { girlThree },
+        img: girlThree,
         type: "girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,
@@ -175,7 +175,7 @@ export const productsGirl = [
     {
         id: "Moldova",
         title: "Blue Tshirt",
-        img: { girlFour },
+        img: girlFour,
         type: "girl",
         description: "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
         quantity: 0,

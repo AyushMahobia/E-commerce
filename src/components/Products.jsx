@@ -6,8 +6,9 @@ const Products = () => {
 
     return (
         <>
-            {products.map((product, ind) => {
-                return (<div key={ind}>
+            {products.map((product) => {
+                return (<div key={product.id}>
+                    <img src={product.img} alt={product.title} />
                     <h1>{product.title}</h1>
                     <p>{product.prize}</p>
                     <button onClick={() => { addToCart(product) }}>ADD TO CART</button>
