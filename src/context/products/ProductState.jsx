@@ -1,74 +1,17 @@
 import React, { useState } from 'react';
 import Context from '../Context';
-
-const originalProduct = [{
-    id: 123,
-    photo: "abc",
-    title: "Lipstick",
-    prize: "900$",
-    star: 3,
-    tag: "female",
-    quantity: 0
-}, {
-    id: 321,
-    photo: "abc",
-    title: "Nike Bag",
-    prize: "1500$",
-    star: 3,
-    tag: "accesories",
-    quantity: 0
-}, {
-    id: 213,
-    photo: "abc",
-    title: "Shorts",
-    prize: "600$",
-    star: 3,
-    tag: "female",
-    quantity: 0
-}, {
-    id: 312,
-    photo: "abc",
-    title: "Watch",
-    prize: "400$",
-    star: 3,
-    tag: "accesories",
-    quantity: 0
-}, {
-    id: 567,
-    photo: "abc",
-    title: "Barcletes",
-    prize: "300$",
-    star: 3,
-    tag: "accesories",
-    quantity: 0
-}, {
-    id: 765,
-    photo: "abc",
-    title: "T-Shirt",
-    prize: "100$",
-    star: 3,
-    tag: "boy",
-    quantity: 0
-}, {
-    id: 657,
-    photo: "abc",
-    title: "Glasses",
-    prize: "600$",
-    star: 3,
-    tag: "boy",
-    quantity: 0
-}]
+import { productsAcc, productsBoy, productsGirl, originalProduct } from '../../constant/products';
 
 const ProductState = (props) => {
 
     const [products, setProducts] = useState(originalProduct)
 
-    const filteredProducts = (tag) => {
+    const filteredProducts = (type) => {
         const filProducts = originalProduct.filter((product) => {
-            if (tag === "") {
+            if (type === "") {
                 return product
             }
-            return (product.tag === tag);
+            return (product.type === type);
         })
         setProducts(filProducts);
     }
