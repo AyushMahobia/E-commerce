@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
+  z-index: 9999;
 }
 
 ul li {
@@ -114,11 +115,12 @@ span {
   }
 
   .navbar {
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    border-bottom: 1px solid var(--gray);
   }
-  .nav-logo img {
+  /* .nav-logo img {
     filter: invert(0);
-  }
+  } */
   .mobile-view {
     translate: -100%;
     display: flex;
@@ -164,7 +166,7 @@ span {
   }
   .nav-link,
   span {
-    color: var(--white);
+    /* color: var(--white); */
   }
   .navigation {
     padding: 1rem;

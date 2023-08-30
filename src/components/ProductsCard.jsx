@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import context from '../context/Context'
 
-const Products = () => {
+const ProductsCard = () => {
     const { products, addToCart } = useContext(context);
 
     return (
@@ -18,4 +18,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default ProductsCard

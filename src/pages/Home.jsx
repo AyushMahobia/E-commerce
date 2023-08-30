@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="home-bg">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="container-home home-content">
           <h2>Raining Offers For Hot Summer!</h2>
           <h3>25% Off On All Products</h3>
