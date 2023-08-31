@@ -164,10 +164,6 @@ span {
     letter-spacing: 1px;
     padding: 0.5rem;
   }
-  .nav-link,
-  span {
-    /* color: var(--white); */
-  }
   .navigation {
     padding: 1rem;
   }

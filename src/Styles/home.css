@@ -1,7 +1,7 @@
 .home-bg {
   background: linear-gradient(180deg, #0084d648 -50%, #00000073 100%),
     url("/images/home/home-bg-one.jpg");
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -152,7 +152,7 @@
   /* background-color: red; */
   max-width: 73rem;
   margin: 0 auto;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   padding-inline: 1rem;
 }
 
@@ -259,7 +259,7 @@
 .other-section {
   max-width: 72rem;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
 }
 .other-grid {
   display: grid;
@@ -301,6 +301,7 @@
 .sale-section {
   border-block: 1px solid var(--gray);
   margin: 2rem auto;
+  background-color: gray;
 }
 .sale-text {
   max-width: 72rem;
@@ -312,4 +313,91 @@
   font-family: var(--heading);
   text-align: center;
   letter-spacing: 1px;
+}
+
+/* home-product-card */
+.home-product-section {
+  background-color: rgb(243, 242, 242);
+}
+.home-product-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.home-product-container h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-family: var(--heading);
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.home-product-container h2::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 0.2rem;
+  background-color: var(--blue);
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+.home-product-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+@media (width < 53rem) {
+  .home-product-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home-product-container h2::before {
+    width: 15%;
+  }
+}
+@media (width < 34rem) {
+  .home-product-container h2 {
+    font-size: 2rem;
+  }
+  .home-product-container h2::before {
+    width: 20%;
+  }
+  .home-product-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.home-product-card {
+  cursor: pointer;
+  transition: scale 0.1s ease-in-out;
+  user-select: none;
+}
+.home-product-card:hover {
+  scale: 1.1;
+}
+.home-product-card:active {
+  scale: 1;
+}
+.home-product-card img {
+  max-width: 100%;
+}
+.home-product-details {
+  margin-top: 1rem;
+}
+.home-product-details h5 {
+  font-size: 1rem;
+  font-family: var(--text);
+  color: var(--black);
+}
+.home-product-details span {
+  text-transform: capitalize;
+  font-family: var(--text);
+  display: inline-block;
+  margin-block: 0.5rem;
+  font-size: 0.9rem;
+  color: gray;
+}
+.home-product-details p {
+  color: var(--black);
+  margin-bottom: 1rem;
 }

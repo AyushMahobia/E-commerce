@@ -1,10 +1,10 @@
 import React from 'react'
 import '../Styles/home.css'
-import Navbar from '../components/Navbar';
 import Brands from '../components/Brands';
 import HomePageCard from '../components/HomePageCard';
 import Other from '../components/Other';
 import Footer from '../components/Footer';
+import HomeProducts from '../components/HomeProducts';
 
 const Home = () => {
 
@@ -23,6 +23,7 @@ const Home = () => {
       </div>
       <Brands />
       <HomePageCard />
+      <HomeProducts />
       <Other />
       <section className="sale-section">
         <div className='sale-text'>

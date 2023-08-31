@@ -21,9 +21,9 @@ const Navbar = () => {
                     </span>
                     <ul className="navigation-product navigation">
                         <li><Link to={"/everything"} className="nav-link mobile-link">Everything</Link></li>
-                        <li><Link to={"/"} className="nav-link mobile-link">Women</Link></li>
-                        <li><Link to={"/"} className="nav-link mobile-link">Men</Link></li>
-                        <li><Link to={"/"} className="nav-link mobile-link">Accessories</Link></li>
+                        <li><Link to={"/women"} className="nav-link mobile-link">Women</Link></li>
+                        <li><Link to={"/men"} className="nav-link mobile-link">Men</Link></li>
+                        <li><Link to={"/accessories"} className="nav-link mobile-link">Accessories</Link></li>
                     </ul>
 
                     <ul className="navigation-other navigation">
