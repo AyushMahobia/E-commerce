@@ -317,7 +317,7 @@
 
 /* home-product-card */
 .home-product-section {
-  background-color: rgb(243, 242, 242);
+  background-color: var(--bg-light);
 }
 .home-product-container {
   max-width: 75rem;

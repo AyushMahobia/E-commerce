@@ -1,0 +1,96 @@
+.product-section {
+  background-color: var(--bg-light);
+}
+.product-container {
+  max-width: 100%;
+  /* margin: 0 auto; */
+  /* background-color: rgb(204, 232, 21); */
+  padding: 3rem 1.5rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.product-one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+.product-two {
+  grid-column: 2 / span 5;
+  grid-row: 1;
+}
+/* @media (width<600px) {
+  .product-grid {
+    display: block;
+  }
+} */
+
+.filter-search-form {
+  margin-bottom: 2rem;
+}
+.filter-search-form input {
+  width: 70%;
+  letter-spacing: 1px;
+  padding: 0.7rem 0.6rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-family: var(--text);
+  outline: none;
+  border: 1px solid var(--gray);
+  display: inline-block;
+}
+.filter-search-form input:active,
+.filter-search-form input:focus {
+  border-color: var(--blue);
+}
+.filter-search-form button {
+  display: inline-block;
+  padding: 0.7rem 0.6rem;
+  outline: none;
+  border-radius: 2px;
+  text-align: center;
+  margin-left: 0.6rem;
+  color: var(--white);
+  font-weight: 600;
+  border: none;
+  background-color: var(--blue);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: scale 0.1s ease-in-out;
+}
+.filter-search-form button:active {
+  scale: 0.9;
+}
+.filter-prize {
+  /* background-color: red; */
+  margin-bottom: 2rem;
+}
+.filter-prize h4,
+.category h4 {
+  font-size: 1.5rem;
+  font-family: var(--heading);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+.filter-prize input {
+  width: 70%;
+}
+.filter-prize button {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-family: var(--text);
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.category p {
+  font-family: var(--text);
+  margin-bottom: 0.4rem;
+  font-size: 0.93rem;
+}

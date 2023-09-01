@@ -5,13 +5,16 @@ import HomePageCard from '../components/HomePageCard';
 import Other from '../components/Other';
 import Footer from '../components/Footer';
 import HomeProducts from '../components/HomeProducts';
-
+import { motion } from "framer-motion"
 const Home = () => {
 
   return (
-    <>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <div className="home-bg">
-        {/* <Navbar /> */}
         <div className="container-home home-content">
           <h2>Raining Offers For Hot Summer!</h2>
           <h3>25% Off On All Products</h3>
@@ -31,7 +34,7 @@ const Home = () => {
         </div>
       </section>
       <Footer />
-    </>
+    </motion.div>
   )
 }
 
