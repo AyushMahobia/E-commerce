@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import '../Styles/navbar.css'
 import logo from '/images/logo.png'
 import { Link } from 'react-router-dom'
+import context from '../context/Context'
 const Navbar = () => {
     const [togglemenu, setToggleMenu] = useState(true)
     const handleMenu = () => {
         setToggleMenu(!togglemenu)
+    }
+
+    const { filteredProducts } = useContext(context);
+    const changeFilter = (type) => {
+        filteredProducts(type);
     }
     return (
         <>
@@ -20,10 +26,10 @@ const Navbar = () => {
                         arrow_back
                     </span>
                     <ul className="navigation-product navigation">
-                        <li><Link to={"/everything"} className="nav-link mobile-link">Everything</Link></li>
-                        <li><Link to={"/women"} className="nav-link mobile-link">Women</Link></li>
-                        <li><Link to={"/men"} className="nav-link mobile-link">Men</Link></li>
-                        <li><Link to={"/accessories"} className="nav-link mobile-link">Accessories</Link></li>
+                        <li><Link to={"/everything"} className="nav-link mobile-link" onClick={() => changeFilter("everything")}>Everything</Link></li>
+                        <li><Link to={"/women"} className="nav-link mobile-link" onClick={() => changeFilter("girl")}>Women</Link></li>
+                        <li><Link to={"/men"} className="nav-link mobile-link" onClick={() => changeFilter("boy")}>Men</Link></li>
+                        <li><Link to={"/accessories"} className="nav-link mobile-link" onClick={() => changeFilter("accessories")}>Accessories</Link></li>
                     </ul>
 
                     <ul className="navigation-other navigation">

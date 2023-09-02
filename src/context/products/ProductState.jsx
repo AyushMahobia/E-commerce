@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Context from '../Context';
-import { productsAcc, productsBoy, productsGirl, originalProduct } from '../../constant/products';
+import { originalProduct } from '../../constant/products';
 
 const ProductState = (props) => {
 
@@ -8,7 +8,7 @@ const ProductState = (props) => {
 
     const filteredProducts = (type) => {
         const filProducts = originalProduct.filter((product) => {
-            if (type === "") {
+            if (type === "everything") {
                 return product
             }
             return (product.type === type);

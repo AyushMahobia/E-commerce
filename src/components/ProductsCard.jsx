@@ -2,8 +2,7 @@ import React, { useContext } from 'react'
 import context from '../context/Context'
 
 const ProductsCard = () => {
-    const { products, addToCart } = useContext(context);
-
+    const { products } = useContext(context);
     return (
         <>
             {products.map((product) => {

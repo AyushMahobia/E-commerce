@@ -10,10 +10,10 @@ const AnimatedRoutes = () => {
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                 <Route path={'/'} element={<Home />} />
-                <Route path={'/everything'} element={<Products products={originalProduct} />} />
-                <Route path={'/women'} element={<Products products={productsGirl} />} />
-                <Route path={'/men'} element={<Products products={productsBoy} />} />
-                <Route path={'/accessories'} element={<Products products={productsAcc} />} />
+                <Route path={'/everything'} element={<Products />} />
+                <Route path={'/women'} element={<Products />} />
+                <Route path={'/men'} element={<Products />} />
+                <Route path={'/accessories'} element={<Products />} />
             </Routes>
         </AnimatePresence>
 
