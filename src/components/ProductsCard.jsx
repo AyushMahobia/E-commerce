@@ -1,8 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import context from '../context/Context'
+import { Link } from 'react-router-dom';
 
 const ProductsCard = () => {
-    const { products } = useContext(context);
+    const { products, setViewProduct } = useContext(context);
     return (
         <>
             <section className="item-section">
@@ -11,20 +12,22 @@ const ProductsCard = () => {
                         {
                             products.map(product => {
                                 return (
-                                    <div className="home-product-card" key={product.id}>
+                                    <Link to={"/view"} className="home-product-card" key={product.id} onClick={() => setViewProduct([product])}>
                                         <img src={product.img} alt={product.id} />
                                         <div className="home-product-details">
                                             <h5>{product.title}</h5>
                                             <span>{product.type}</span>
                                             <p>{product.newPrize}</p>
                                         </div>
-                                    </div>
+                                    </Link>
                                 )
                             })
                         }
                     </div>
                 </div>
             </section>
+
+
         </>
     )
 }

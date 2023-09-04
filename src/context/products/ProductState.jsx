@@ -32,8 +32,10 @@ const ProductState = (props) => {
             setCartItems([...cartItems, newItem]);
         }
     };
+
+    const [viewProduct, setViewProduct] = useState([]);
     return (
-        <Context.Provider value={{ products, filteredProducts, cartItems, addToCart }}>
+        <Context.Provider value={{ products, filteredProducts, cartItems, addToCart, viewProduct, setViewProduct }}>
             {props.children}
         </Context.Provider>
     )

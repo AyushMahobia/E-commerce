@@ -6,6 +6,7 @@ import Other from '../components/Other';
 import Footer from '../components/Footer';
 import HomeProducts from '../components/HomeProducts';
 import { motion } from "framer-motion"
+import Sales from '../components/Sales';
 const Home = () => {
 
   return (
@@ -28,11 +29,7 @@ const Home = () => {
       <HomePageCard />
       <HomeProducts />
       <Other />
-      <section className="sale-section">
-        <div className='sale-text'>
-          <h4>SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.</h4>
-        </div>
-      </section>
+      <Sales />
       <Footer />
     </motion.div>
   )

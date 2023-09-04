@@ -1,35 +1,19 @@
 import React, { useState } from 'react'
-import "../Styles/products.css"
-import { motion } from "framer-motion"
-import ProductsCard from '../components/ProductsCard'
-import SideFilter from '../components/SideFilter'
-const Products = () => {
-
+import Other from "../components/Other"
+import Sales from './Sales'
+import Footer from './Footer'
+const ViewProduct = ({ products }) => {
+    const [quantity, setQuantity] = useState(0)
+    const handleChange = (e) => {
+        let temp = e.target.value;
+        // console.log(temp)
+        temp <= 0 ? setQuantity(0) : setQuantity(temp);
+    }
     return (
-        <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
-
-            className='product-section'
-        >
-            <div className='product-container'>
-                <div className="product-grid">
-                    <div className='product-two'>
-                        <ProductsCard />
-                    </div>
-                    <div className='product-one'>
-                        <SideFilter />
-                    </div>
-
-                </div>
-
-            </div>
-
-            {/* <section className={`view-product-section ${show && "active-view-section"}`}>
-                <h2 onClick={() => setShow(!show)}>X</h2>
+        <>
+            <section className="view-product-section">
                 {
-                    viewProduct.map(product => {
+                    products.map(product => {
                         return (
                             <div key={product.id} className='view-product-details'>
                                 <div className="view-img">
@@ -51,9 +35,12 @@ const Products = () => {
                         )
                     })
                 }
-            </section> */}
-        </motion.div>
+            </section >
+            <Other />
+            <Sales />
+            <Footer />
+        </>
     )
 }
 
-export default Products
+export default ViewProduct

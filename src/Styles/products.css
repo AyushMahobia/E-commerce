@@ -130,3 +130,110 @@
     padding: 2rem 1rem;
   }
 }
+
+/* view-product-section */
+.view-product-section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(246, 240, 240);
+  padding: 3rem 1rem;
+  transition: display 0.3s ease-in-out;
+}
+
+.view-product-section h2 {
+  position: absolute;
+  margin-bottom: 2rem;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  font-family: var(--text);
+  cursor: pointer;
+  transition: scale 0.1s ease-in-out;
+  user-select: none;
+}
+.view-product-section h2:hover {
+  scale: 1.05;
+}
+.view-product-section h2:active {
+  scale: 0.95;
+}
+
+.view-product-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  color: var(--black);
+}
+@media (width < 40rem) {
+  .view-product-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.view-img {
+  text-align: center;
+}
+.view-img img {
+  width: 100%;
+}
+
+.view-description {
+  --margin-botton: 0.7rem;
+}
+
+.view-description span {
+  font-size: 1.2rem;
+  font-family: var(--text);
+  margin-bottom: var(--margin-botton);
+  display: inline-block;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.view-description h3 {
+  font-size: 2rem;
+  font-family: var(--heading);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.view-description P {
+  margin-bottom: var(--margin-botton);
+  font-size: 1rem;
+  line-height: 2;
+  font-family: var(--text);
+}
+
+.view-description .view-prize {
+  font-size: 2rem;
+}
+
+.cart-btn {
+  margin-block: 1rem;
+}
+
+.cart-btn input {
+  padding: 0.5rem 0.4rem;
+  text-align: center;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  background-color: var(--white);
+  font-family: var(--text);
+  max-width: 4rem;
+  font-size: 1rem;
+  border: none;
+  margin-right: 1.5rem;
+  border: 1px solid var(--darkBlue);
+}
+
+.cart-btn button {
+  padding: 0.6rem 1.9rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  font-family: var(--text);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
