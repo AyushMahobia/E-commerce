@@ -44,7 +44,7 @@ const Navbar = () => {
                 <div className="nav-icon" onClick={handleMenu}>
                     <div className="nav-shop">
                         <span><Link to={"/"} className="nav-link prize">$0.00</Link></span>
-                        <span><Link to={"/"} className="nav-link"><span className="material-symbols-outlined">
+                        <span><Link to={"/cartItems"} className="nav-link"><span className="material-symbols-outlined">
                             shopping_cart_checkout
                         </span></Link></span>
                         <span><Link to={"/"} className="nav-link"><span className="material-symbols-outlined person">

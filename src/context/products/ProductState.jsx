@@ -18,6 +18,7 @@ const ProductState = (props) => {
 
     const [cartItems, setCartItems] = useState([]);
     const addToCart = (product) => {
+        // console.log(product)
         const existingItem = cartItems.find((item) => item.id === product.id);
 
         if (existingItem) {
@@ -31,6 +32,7 @@ const ProductState = (props) => {
             const newItem = { ...product, quantity: 1 };
             setCartItems([...cartItems, newItem]);
         }
+        // console.log(cartItems)
     };
 
     const [viewProduct, setViewProduct] = useState([]);

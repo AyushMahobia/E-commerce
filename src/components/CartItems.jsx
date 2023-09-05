@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import context from '../context/Context'
 
 const CartItems = () => {
@@ -6,15 +6,18 @@ const CartItems = () => {
 
   return (
     <>
-      {cartItems.map((item, ind) => {
-        return (<div key={ind}>
-          <h1>{item.title}</h1>
-          <p>{item.prize}</p>
-          <p>{item.quantity}</p>
-          <button>Buy now</button>
-        </div>
-        )
-      })}
+      <h1>hii</h1>
+      <div >
+        {
+          cartItems.map((item, ind) => {
+            return (
+              <div key={ind}>
+                <h1>{item.title}</h1>
+              </div>
+            )
+          })
+        }
+      </div>
     </>
   )
 }

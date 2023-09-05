@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Other from "../components/Other"
 import Sales from './Sales'
 import Footer from './Footer'
+import context from '../context/Context'
 const ViewProduct = ({ products }) => {
+    const { addToCart } = useContext(context);
     const [quantity, setQuantity] = useState(0)
     const handleChange = (e) => {
         let temp = e.target.value;
-        // console.log(temp)
         temp <= 0 ? setQuantity(0) : setQuantity(temp);
     }
     return (
@@ -25,10 +26,10 @@ const ViewProduct = ({ products }) => {
                                     <p className="view-prize">{product.newPrize}</p>
                                     <p>{product.description}</p>
                                     <div className="cart-btn">
-                                        <form >
+                                        < >
                                             <input type="number" onChange={handleChange} value={quantity} />
-                                            <button type="submit">Add to cart</button>
-                                        </form>
+                                            <button onClick={() => addToCart([product])}>Add to cart</button>
+                                        </>
                                     </div>
                                 </div>
                             </div>

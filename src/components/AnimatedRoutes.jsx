@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Products from '../pages/Products'
 import { AnimatePresence } from "framer-motion"
 import ViewProduct from './ViewProduct'
+import CartItems from './CartItems'
 import context from '../context/Context'
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -19,6 +20,7 @@ const AnimatedRoutes = () => {
                 <Route path={'/men'} element={<Products />} />
                 <Route path={'/accessories'} element={<Products />} />
                 <Route path={'/view'} element={<ViewProduct products={viewProduct} />} />
+                <Route path={'/cartItems'} element={<CartItems />} />
             </Routes>
         </AnimatePresence>
 
