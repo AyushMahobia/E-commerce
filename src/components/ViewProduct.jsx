@@ -28,7 +28,7 @@ const ViewProduct = ({ products }) => {
                                     <div className="cart-btn">
                                         < >
                                             <input type="number" onChange={handleChange} value={quantity} />
-                                            <button onClick={() => addToCart([product])}>Add to cart</button>
+                                            <button onClick={() => addToCart(product)}>Add to cart</button>
                                         </>
                                     </div>
                                 </div>

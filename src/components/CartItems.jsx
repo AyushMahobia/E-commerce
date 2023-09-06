@@ -6,18 +6,17 @@ const CartItems = () => {
 
   return (
     <>
-      <h1>hii</h1>
-      <div >
-        {
-          cartItems.map((item, ind) => {
-            return (
-              <div key={ind}>
-                <h1>{item.title}</h1>
-              </div>
-            )
-          })
-        }
-      </div>
+      <h1>Hii</h1>
+      {
+        cartItems.map(item => {
+          return (
+            <div key={item.id}>
+              <h2>{item.title}</h2>
+              <h3>{item.quantity}</h3>
+            </div>
+          )
+        })
+      }
     </>
   )
 }

@@ -18,7 +18,7 @@ const ProductState = (props) => {
 
     const [cartItems, setCartItems] = useState([]);
     const addToCart = (product) => {
-        // console.log(product)
+
         const existingItem = cartItems.find((item) => item.id === product.id);
 
         if (existingItem) {
@@ -26,13 +26,13 @@ const ProductState = (props) => {
             const updatedItems = cartItems.map((item) =>
                 item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
             );
+            // console.log(updatedItems)
             setCartItems(updatedItems);
         } else {
-            // If the item is not in the cart, add it
             const newItem = { ...product, quantity: 1 };
-            setCartItems([...cartItems, newItem]);
+            setCartItems(cartItems.concat(newItem));
         }
-        // console.log(cartItems)
+
     };
 
     const [viewProduct, setViewProduct] = useState([]);

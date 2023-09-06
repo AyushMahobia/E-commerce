@@ -28,9 +28,6 @@ span {
   font-family: var(--text);
 }
 
-/* .logo {
-    align-self: flex-start;
-} */
 .nav-logo {
   margin: 0.5rem 2rem;
   padding-top: 0.5rem;
@@ -90,15 +87,8 @@ span {
 
 .nav-shop {
   margin-inline: 1rem;
-  /* position: relative; */
   display: flex;
   align-items: center;
-}
-
-.prize {
-  /* position: absolute; */
-  left: -2.5rem;
-  bottom: 25%;
 }
 
 .nav-shop span {
@@ -118,9 +108,7 @@ span {
     /* background-color: rgba(0, 0, 0, 0.2); */
     border-bottom: 1px solid var(--gray);
   }
-  /* .nav-logo img {
-    filter: invert(0);
-  } */
+
   .mobile-view {
     translate: -100%;
     display: flex;
